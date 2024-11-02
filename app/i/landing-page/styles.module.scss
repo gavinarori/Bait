@@ -1,0 +1,71 @@
+.title {
+  display: flex;
+  gap: 4px 8px;
+  flex-wrap: wrap;
+
+  @screen md {
+    gap: 8px;
+  }
+
+  span {
+    animation: fadeInUp 400ms cubic-bezier(0.22, 0.61, 0.36, 1);
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  span:nth-of-type(1) {
+    animation-delay: 500ms;
+  }
+  span:nth-of-type(2) {
+    animation-delay: 600ms;
+  }
+
+  span:nth-of-type(3) {
+    animation-delay: 650ms;
+  }
+
+  span:nth-of-type(4) {
+    animation-delay: 700ms;
+  }
+
+  span:nth-of-type(5) {
+    animation-delay: 750ms;
+  }
+
+  span:nth-of-type(6) {
+    animation-delay: 800ms;
+  }
+
+  span:nth-of-type(7) {
+    animation-delay: 850ms;
+  }
+}
+
+.subtitle,
+.ctas {
+  animation: fadeInUp 400ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.subtitle {
+  animation-delay: 850ms;
+}
+
+.ctas {
+  animation-delay: 850ms;
+  display: flex;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
